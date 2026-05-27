@@ -13,5 +13,5 @@ class Project(Base):
     is_completed = Column(Boolean, default=False)
 
     places = relationship(
-        "Place", back_populates="project", cascade="all, delete-orphan"
+        "Place", back_populates="project", cascade="all, delete-orphan", lazy="selectin"
     )
