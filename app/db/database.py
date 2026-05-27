@@ -1,5 +1,5 @@
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import DeclarativeBase
 
 SQLALCHEMY_DATABASE_URL = "sqlite+aiosqlite:///./travel_planner.db"
 
@@ -15,7 +15,8 @@ AsyncSessionLocal = async_sessionmaker(
     autoflush=False,
 )
 
-Base = declarative_base()
+class Base(DeclarativeBase):
+    pass
 
 
 async def get_db():
