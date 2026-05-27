@@ -1,5 +1,3 @@
-@'
-
 # Travel Planner API
 
 A management application that helps travellers plan trips and collect desired places to visit, built as an asynchronous RESTful API.

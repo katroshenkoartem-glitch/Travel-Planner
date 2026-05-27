@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.git/
+.gitignore
+travel_planner.db
+.vscode/
+.idea/
