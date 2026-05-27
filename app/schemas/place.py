@@ -7,7 +7,7 @@ class PlaceBase(BaseModel):
 
 
 class PlaceCreate(PlaceBase):
-    pass
+    notes: Optional[str] = None
 
 
 class PlaceUpdate(BaseModel):
